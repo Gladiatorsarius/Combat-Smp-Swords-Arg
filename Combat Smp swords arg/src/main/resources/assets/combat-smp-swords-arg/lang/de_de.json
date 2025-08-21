@@ -1,0 +1,10 @@
+{
+  "item.combat-smp-swords-arg.amethyst_sword": "Amethystschwert",
+  "tooltip.combat-smp-swords-arg.amethyst_sword.line1": "+10 Schaden",
+  "tooltip.combat-smp-swords-arg.amethyst_sword.line2": "1.6 Angriffsgeschwindigkeit",
+  "tooltip.combat-smp-swords-arg.amethyst_sword.line3": "Haltbarkeit 4620",
+  "tooltip.combat-smp-swords-arg.amethyst_sword.line4": "Feuerfest"
+  ,"item.combat-smp-swords-arg.corrosive_dust": "Korrosiver Staub"
+  ,"item.minecraft.potion.effect.combat-smp-swords-arg.corrosive_fire": "Trank des Korrosiven Feuers"
+  ,"tooltip.combat-smp-swords-arg.corrosive_dust.brew": "Mit Wasserflasche brauen, um Korrosives Feuer zu erhalten"
+}

@@ -1,0 +1,1461 @@
+{
+  "mod_elements": [
+    {
+      "name": "WindBlade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_blade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/wind_blade.json",
+          "src/main/resources/assets/legendary_crate/items/wind_blade.json",
+          "src/main/java/net/mcreator/legendarycrate/item/WindBladeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ChorusSlayer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_slayer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/chorus_slayer.json",
+          "src/main/java/net/mcreator/legendarycrate/item/ChorusSlayerItem.java",
+          "src/main/resources/assets/legendary_crate/items/chorus_slayer.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusSlayerRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_slayer_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/ChorusSlayerRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmetyhstPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ametyhst_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/items/ametyhst_pickaxe.json",
+          "src/main/java/net/mcreator/legendarycrate/item/AmetyhstPickaxeItem.java",
+          "src/main/resources/assets/legendary_crate/models/item/ametyhst_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "Smelt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/SmeltProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ThunderSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/item/ThunderSwordItem.java",
+          "src/main/resources/assets/legendary_crate/items/thunder_sword.json",
+          "src/main/resources/assets/legendary_crate/models/item/thunder_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "ThunderSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/ThunderSwordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PhantomBlade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_blade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/phantom_blade.json",
+          "src/main/resources/assets/legendary_crate/items/phantom_blade.json",
+          "src/main/resources/assets/legendary_crate/models/item/phantom_blade_blocking.json",
+          "src/main/java/net/mcreator/legendarycrate/item/PhantomBladeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PhantomBladeToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_blade_tool_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/PhantomBladeToolInInventoryTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WindBladeRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_blade_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/WindBladeRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TntSwordRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_sword_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/TntSwordRightclickedOnBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TntSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/item/TntSwordItem.java",
+          "src/main/resources/assets/legendary_crate/items/tnt_sword.json",
+          "src/main/resources/assets/legendary_crate/models/item/tnt_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "WardenBlasterRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_blaster_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/WardenBlasterRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WardenBlaster",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_blaster",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/item/WardenBlasterItem.java",
+          "src/main/resources/assets/legendary_crate/items/warden_blaster.json",
+          "src/main/resources/assets/legendary_crate/models/item/warden_blaster.json"
+        ]
+      }
+    },
+    {
+      "name": "GrayApplePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gray_apple_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/GrayApplePlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GrayApple",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gray_apple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/item/GrayAppleItem.java",
+          "src/main/resources/assets/legendary_crate/models/item/gray_apple.json",
+          "src/main/resources/assets/legendary_crate/items/gray_apple.json"
+        ]
+      }
+    },
+    {
+      "name": "DragonSlayer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_slayer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/item/DragonSlayerItem.java",
+          "src/main/resources/assets/legendary_crate/items/dragon_slayer.json",
+          "src/main/resources/assets/legendary_crate/models/item/dragon_slayer.json"
+        ]
+      }
+    },
+    {
+      "name": "PVPpotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pv_ppotion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "LifeStealerLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_stealer_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/LifeStealerLivingEntityIsHitWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LifeStealer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_stealer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/life_stealer.json",
+          "src/main/java/net/mcreator/legendarycrate/item/LifeStealerItem.java",
+          "src/main/resources/assets/legendary_crate/items/life_stealer.json"
+        ]
+      }
+    },
+    {
+      "name": "EarthWaveSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_wave_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/item/EarthWaveSwordItem.java",
+          "src/main/resources/assets/legendary_crate/models/item/earth_wave_sword.json",
+          "src/main/resources/assets/legendary_crate/items/earth_wave_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "EarthWaveSwordRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_wave_sword_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/EarthWaveSwordRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LevitationWandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levitation_wand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/LevitationWandRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LevitationWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levitation_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/levitation_wand.json",
+          "src/main/resources/assets/legendary_crate/items/levitation_wand.json",
+          "src/main/java/net/mcreator/legendarycrate/item/LevitationWandItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedStick",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_stick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/reinforced_stick.json",
+          "src/main/resources/assets/legendary_crate/items/reinforced_stick.json",
+          "src/main/java/net/mcreator/legendarycrate/item/ReinforcedStickItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedStickCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_stick_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/legendary_crate/advancement/recipes/reinforced_stick_crafting.json",
+          "src/main/resources/data/legendary_crate/recipe/reinforced_stick_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "LevitationWandCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levitation_wand_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/legendary_crate/recipe/levitation_wand_crafting.json",
+          "src/main/resources/data/legendary_crate/advancement/recipes/levitation_wand_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "CorrosiveFire",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrosive_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/potion/CorrosiveFireMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "CorrosiveFirePotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrosive_fire_potion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CorrosiveFireEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrosive_fire_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/CorrosiveFireEffectStartedappliedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PotionOfIntstantXPEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_of_intstant_xp_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/PotionOfIntstantXPEffectStartedappliedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PotionOfIntstantXP",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_of_intstant_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/potion/PotionOfIntstantXPMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "PotionOfInstantXPPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_of_instant_xp_potion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "TNTRod",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_rod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/item/TNTRodItem.java",
+          "src/main/resources/assets/legendary_crate/models/item/tnt_rod.json",
+          "src/main/resources/assets/legendary_crate/items/tnt_rod.json"
+        ]
+      }
+    },
+    {
+      "name": "TNTRodRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_rod_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/TNTRodRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Testtool",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "godsview",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/godsview.json",
+          "src/main/java/net/mcreator/legendarycrate/item/TesttoolItem.java",
+          "src/main/resources/assets/legendary_crate/items/godsview.json"
+        ]
+      }
+    },
+    {
+      "name": "PhantomBladeRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_blade_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/PhantomBladeRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TesttoolRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtool_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/TesttoolRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BreacherToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breacher_tool_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/BreacherToolInInventoryTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Breacher",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breacher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/breacher.json",
+          "src/main/java/net/mcreator/legendarycrate/item/BreacherItem.java",
+          "src/main/resources/assets/legendary_crate/items/breacher.json"
+        ]
+      }
+    },
+    {
+      "name": "GhostBladeRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_blade_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/GhostBladeRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GhostBlade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_blade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/items/ghost_blade.json",
+          "src/main/resources/assets/legendary_crate/models/item/ghost_blade.json",
+          "src/main/java/net/mcreator/legendarycrate/item/GhostBladeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BerserkHandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "berserk_hand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/BerserkHandRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BerserkHand",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "berserk_hand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/berserk_hand.json",
+          "src/main/resources/assets/legendary_crate/items/berserk_hand.json",
+          "src/main/java/net/mcreator/legendarycrate/item/BerserkHandItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AncientVoidRelic",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_void_relic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/ancient_void_relic.json",
+          "src/main/resources/assets/legendary_crate/items/ancient_void_relic.json",
+          "src/main/java/net/mcreator/legendarycrate/item/AncientVoidRelicItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AncientVoidRelicRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_void_relic_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/AncientVoidRelicRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AncientVoidRelicToolInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_void_relic_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/AncientVoidRelicToolInHandTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmethystSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/item/AmethystSwordItem.java",
+          "src/main/resources/assets/legendary_crate/models/item/amethyst_sword.json",
+          "src/main/resources/assets/legendary_crate/items/amethyst_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "FurnaceCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/legendary_crate/recipe/furnace_crafting.json",
+          "src/main/resources/data/legendary_crate/advancement/recipes/furnace_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "GrayAppleCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gray_apple_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/legendary_crate/advancement/recipes/gray_apple_crafting.json",
+          "src/main/resources/data/legendary_crate/recipe/gray_apple_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "TNTRodCRafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_rod_c_rafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/legendary_crate/recipe/tnt_rod_c_rafting.json",
+          "src/main/resources/data/legendary_crate/advancement/recipes/tnt_rod_c_rafting.json"
+        ]
+      }
+    },
+    {
+      "name": "PVPPotionBrewing",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pvp_potion_brewing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/recipe/brewing/PVPPotionBrewingBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "CorrosiveFireBrewing",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrosive_fire_brewing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/recipe/brewing/CorrosiveFireBrewingBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "CorrosiveDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrosive_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/models/item/corrosive_dust.json",
+          "src/main/resources/assets/legendary_crate/items/corrosive_dust.json",
+          "src/main/java/net/mcreator/legendarycrate/item/CorrosiveDustItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CorrosiveDustCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrosive_dust_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/legendary_crate/recipe/corrosive_dust_crafting.json",
+          "src/main/resources/data/legendary_crate/advancement/recipes/corrosive_dust_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "XPOrb",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_orb",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/legendary_crate/advancement/recipes/xp_orb.json",
+          "src/main/resources/data/legendary_crate/recipe/xp_orb.json"
+        ]
+      }
+    },
+    {
+      "name": "XPOrbabercraftingrecipiheistleiderxporb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_orbabercraftingrecipiheistleiderxporb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/items/xp_orbabercraftingrecipiheistleiderxporb.json",
+          "src/main/java/net/mcreator/legendarycrate/item/XPOrbabercraftingrecipiheistleiderxporbItem.java",
+          "src/main/resources/assets/legendary_crate/models/item/xp_orbabercraftingrecipiheistleiderxporb.json"
+        ]
+      }
+    },
+    {
+      "name": "InstantXPBrewing",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instant_xp_brewing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/recipe/brewing/InstantXPBrewingBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "SharpenedAmethystShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sharpened_amethyst_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/item/SharpenedAmethystShardItem.java",
+          "src/main/resources/assets/legendary_crate/models/item/sharpened_amethyst_shard.json",
+          "src/main/resources/assets/legendary_crate/items/sharpened_amethyst_shard.json"
+        ]
+      }
+    },
+    {
+      "name": "SharpenedAmethystShardCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sharpened_amethyst_shard_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/legendary_crate/recipe/sharpened_amethyst_shard_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystSwordCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_sword_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/legendary_crate/recipe/amethyst_sword_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "ChaosCrystalItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_crystal_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/ChaosCrystalItemInInventoryTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ChaosCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legendary_crate/items/chaos_crystal.json",
+          "src/main/resources/assets/legendary_crate/models/item/chaos_crystal.json",
+          "src/main/java/net/mcreator/legendarycrate/item/ChaosCrystalItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TntSwordToolInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_sword_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/legendarycrate/procedures/TntSwordToolInHandTickProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Djump",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "Tp",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "removeBlock",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "cooldownThunder",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "phantomwings",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "tntcooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "GhostBladeDash",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "VoidRelicTimer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "WindBladeCooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "WindBladeBautaReset",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "WardenBlasterCharge",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "DripstonerCooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "godsviewcooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "phantominvisscooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Testtool",
+      "~CUSTOM:AmethystSword",
+      "~CUSTOM:AncientVoidRelic",
+      "~CUSTOM:BerserkHand",
+      "~CUSTOM:GhostBlade",
+      "~CUSTOM:Breacher",
+      "~CUSTOM:EarthWaveSword",
+      "~CUSTOM:LifeStealer",
+      "~CUSTOM:DragonSlayer",
+      "~CUSTOM:WardenBlaster",
+      "~CUSTOM:TntSword",
+      "~CUSTOM:ThunderSword",
+      "~CUSTOM:ChorusSlayer",
+      "~CUSTOM:WindBlade"
+    ],
+    "ITEMS:legendary_crate:wind_blade_repair_items": [
+      "~Items.BREEZE_ROD"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:AmetyhstPickaxe"
+    ],
+    "ITEMS:legendary_crate:ametyhst_pickaxe_repair_items": [
+      "~Blocks.IRON_BLOCK"
+    ],
+    "ITEMS:legendary_crate:thunder_sword_repair_items": [
+      "~Items.COPPER_INGOT"
+    ],
+    "ITEMS:legendary_crate:dragon_slayer_repair_items": [
+      "~Items.END_CRYSTAL"
+    ],
+    "ITEMS:legendary_crate:earth_wave_sword_repair_items": [],
+    "ITEMS:legendary_crate:life_stealer_repair_items": [
+      "~Items.TOTEM_OF_UNDYING"
+    ],
+    "ITEMS:legendary_crate:chorus_slayer_repair_items": [
+      "~Blocks.CHORUS_FLOWER"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:LevitationWand"
+    ],
+    "ITEMS:minecraft:enchantable/fishing": [
+      "~CUSTOM:TNTRod"
+    ],
+    "ITEMS:legendary_crate:tnt_rod_repair_items": [
+      "~Blocks.TNT"
+    ],
+    "ITEMS:legendary_crate:breacher_repair_items": [
+      "~Blocks.HEAVY_CORE"
+    ],
+    "ITEMS:legendary_crate:amethyst_sword_repair_items": [
+      "~Items.AMETHYST_SHARD"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.legendary_crate.wind_blade": "Wind Blade",
+      "item.legendary_crate.chorus_slayer": "Chorus Slayer",
+      "item.legendary_crate.ametyhst_pickaxe": "Furnace Pickaxe",
+      "item.legendary_crate.thunder_sword": "Thunder Sword",
+      "item.legendary_crate.phantom_blade": "Phantom Blade",
+      "item.legendary_crate.tnt_sword": "Tnt Sword",
+      "item.legendary_crate.warden_blaster": "Warden Blaster",
+      "item.legendary_crate.gray_apple": "Gray Apple",
+      "item.legendary_crate.dragon_slayer": "Dragon Slayer",
+      "item.minecraft.splash_potion.effect.pv_ppotion": "Splash Potion of PVP",
+      "item.minecraft.tipped_arrow.effect.pv_ppotion": "Arrow of PVP",
+      "item.minecraft.lingering_potion.effect.pv_ppotion": "Lingering Potion of PVP",
+      "item.minecraft.potion.effect.pv_ppotion": "Potion of PVP",
+      "item.legendary_crate.life_stealer": "Life Stealer",
+      "item.legendary_crate.earth_wave_sword": "DripstoneSword",
+      "item.legendary_crate.levitation_wand": "Levitation Wand",
+      "item.legendary_crate.reinforced_stick": "Reinforced Stick",
+      "effect.legendary_crate.corrosive_fire": "Corrosive Fire",
+      "item.minecraft.tipped_arrow.effect.corrosive_fire_potion": "Arrow of Corrosive Fire",
+      "item.minecraft.splash_potion.effect.corrosive_fire_potion": "Splash Potion of Corrosive Fire",
+      "item.minecraft.potion.effect.corrosive_fire_potion": "Potion of Corrosive Fire",
+      "item.minecraft.lingering_potion.effect.corrosive_fire_potion": "Lingering Potion of Corrosive Fire",
+      "effect.legendary_crate.potion_of_intstant_xp": "Intstant XP",
+      "item.minecraft.splash_potion.effect.potion_of_instant_xp_potion": "Splash Potion of Instant XP ",
+      "item.minecraft.lingering_potion.effect.potion_of_instant_xp_potion": "Lingering Potion of Instant XP ",
+      "item.minecraft.tipped_arrow.effect.potion_of_instant_xp_potion": "Arrow of Instant XP ",
+      "item.minecraft.potion.effect.potion_of_instant_xp_potion": "Potion of Instant XP",
+      "item.legendary_crate.tnt_rod": "TNT Rod",
+      "item.legendary_crate.breacher": "Breacher",
+      "item.legendary_crate.ghost_blade": "Ghost Blade",
+      "item.legendary_crate.berserk_hand": "Berserk Hand",
+      "item.legendary_crate.ancient_void_relic": "Ancient Void Relic",
+      "item.legendary_crate.amethyst_sword": "Amethyst Sword",
+      "item.legendary_crate.corrosive_dust": "Corrosive Dust",
+      "item.legendary_crate.xp_orbabercraftingrecipiheistleiderxporb": "Xp Orb",
+      "item.legendary_crate.sharpened_amethyst_shard": "Sharpened Amethyst Shard",
+      "item.legendary_crate.godsview": "Gods view",
+      "item.legendary_crate.chaos_crystal": "Chaos Crystal"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/legendarycrate/init/LegendaryCrateModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/legendarycrate/LegendaryCrateMod.java",
+      "src/main/java/net/mcreator/legendarycrate/network/LegendaryCrateModVariables.java",
+      "src/main/java/net/mcreator/legendarycrate/init/LegendaryCrateModMobEffects.java",
+      "src/main/java/net/mcreator/legendarycrate/init/LegendaryCrateModPotions.java",
+      "src/main/java/net/mcreator/legendarycrate/init/LegendaryCrateModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "legendary_crate",
+    "modName": "legendary_crate",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "modElementsPackage": "net.mcreator.legendarycrate"
+  },
+  "mcreatorVersion": 202500228610
+}

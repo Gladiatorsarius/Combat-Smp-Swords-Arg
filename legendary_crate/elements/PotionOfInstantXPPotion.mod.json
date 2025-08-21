@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Instant XP",
+    "splashName": "Splash Potion of Instant XP ",
+    "lingeringName": "Lingering Potion of Instant XP ",
+    "arrowName": "Arrow of Instant XP ",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:PotionOfIntstantXP"
+        },
+        "duration": 200,
+        "infinite": false,
+        "amplifier": 1,
+        "ambient": true,
+        "showParticles": true
+      }
+    ]
+  }
+}

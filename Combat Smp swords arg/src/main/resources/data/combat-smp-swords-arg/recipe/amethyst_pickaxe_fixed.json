@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SOB",
+    "CRC",
+    " R "
+  ],
+  "key": {
+    "S": {
+      "id": "minecraft:smoker"
+    },
+    "O": {
+      "id": "minecraft:furnace"
+    },
+    "B": {
+      "id": "minecraft:blast_furnace"
+    },
+    "C": {
+      "id": "minecraft:coal_block"
+    },
+    "R": {
+      "id": "combat-smp-swords-arg:reinforced_stick"
+    }
+  },
+  "result": {
+    "id": "combat-smp-swords-arg:amethyst_pickaxe",
+    "count": 1
+  }
+}

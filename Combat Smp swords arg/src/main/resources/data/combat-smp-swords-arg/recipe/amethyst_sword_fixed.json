@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " S ",
+    " R "
+  ],
+  "key": {
+    "S": {
+      "id": "combat-smp-swords-arg:sharpened_amethyst_shard"
+    },
+    "R": {
+      "id": "combat-smp-swords-arg:reinforced_stick"
+    }
+  },
+  "result": {
+    "id": "combat-smp-swords-arg:amethyst_sword",
+    "count": 1
+  }
+}

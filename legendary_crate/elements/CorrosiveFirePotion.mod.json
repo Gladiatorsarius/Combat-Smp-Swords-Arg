@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Corrosive Fire",
+    "splashName": "Splash Potion of Corrosive Fire",
+    "lingeringName": "Lingering Potion of Corrosive Fire",
+    "arrowName": "Arrow of Corrosive Fire",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:CorrosiveFire"
+        },
+        "duration": 600,
+        "infinite": false,
+        "amplifier": 1,
+        "ambient": true,
+        "showParticles": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "combat-smp-swords-arg:item/life_stealer" }
+}

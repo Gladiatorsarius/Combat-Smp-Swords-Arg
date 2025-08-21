@@ -1,0 +1,306 @@
+### Waffen & Werkzeuge alle schwerter werden im Creativ menu unter *combat* und alle Spitzhacken unter *tools and utilitis* und Crafting ingredients unter *Crafting ingredients* außerdem sollen die werte schaden und angrifs Geschwindigkeit die werte das vanilla games sein also hat ein netehrite schwert zum beisßiel 8 schaden und 1.6 angrifsgeschwindgkeit
+
+**Amethyst Sword**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 10 Schaden, 1.6 Angriffsgeschwindigkeit, 4620 Haltbarkeit.
+- **Reparatur:** Kann mit Amethyst-Scherben repariert werden.
+- **Besonderheiten:** Ist immun gegen Feuer und Verbrennungsschaden.
+-**Visuelle/Sound effekte** Bei jedem treffer mit dem schwert wird der amethyst_hit Sound abgespielt
+- **Herstellung:** Benötigt 2 "Geschärfte Amethyst-Scherben" und 1 "Verstärkten Stock".
+    - **Anordnung:**
+        - Oben Mitte: Geschärfte Amethyst-Scherbe
+        - Mitte: Geschärfte Amethyst-Scherbe
+        - Unten Mitte: Verstärkter Stock
+
+**Amethyst Pickaxe**
+- **Typ:** Spitzhacke (bedeutet das sie baut blöcke des typens stein am schnellsten ab und alle anderen langsamer)
+- **Werte:** 3 Schaden, 15 Effizienz, 15000 Haltbarkeit.
+- **Reparatur:** Kann mit Eisenblöcken repariert werden.
+- **Funktion "Smelt":**
+    - Wenn ein Block abgebaut wird, der mit dieser Spitzhacke abgebaut werden kann, prüft das Werkzeug, ob der Block ein Schmelzergebnis hat (z.B. Eisenerz -> Eisenbarren).
+    - Wenn ja, wird der ursprüngliche Block zerstört, ohne dass er droppt bedeutet das ursprüngliche item wird NICHT gedroppt sondern nur das smelt produkt. Stattdessen wird direkt das geschmolzene Produkt (z.B. der Eisenbarren) an seiner Stelle als Item-Drop erzeugt.
+    - Begleitet wird dies von Flammpartikeln und einem "Feuer-aus"-Geräusch wenn ein item als schmelzprodukt gedroppt wird.
+- **Herstellung:** Benötigt 1 Räucherofen, 1 Ofen, 1 Schmelzofen, 2 Kohleblöcke und 2 "Verstärkte Stöcke".
+    - **Anordnung:**
+        - Obere Reihe: Räucherofen, Ofen, Schmelzofen
+        - Mittlere Reihe: Kohleblock, Verstärkter Stock, Kohleblock 
+        - Untere Reihe: (leer), Verstärkter Stock, (leer)
+
+**Ancient Void Relic**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 4 Schaden, 1.0 Angriffsgeschwindigkeit, 100 Haltbarkeit.
+- **Funktion "Void Call":**
+    - **Variablen:** `global:voidrelic` (Timer), `global:voidrelicpower` (Aktivierungsfenster).
+    - **Aufladen:** Das Relikt muss 10 Minuten (12000 Ticks) ununterbrochen in der Hand gehalten werden. Die Variable `global:voidrelic` zählt dabei hoch.
+    - **Aktivierung:** Sobald `global:voidrelic` 12000 erreicht, wird `global:voidrelicpower` auf 1 gesetzt und die Nachricht "The Void Tentacels trust you now! Use there powers quick!" erscheint. Der Spieler hat nun ein 4-Sekunden-Zeitfenster, um die Fähigkeit zu nutzen.
+    - **Fähigkeit (Rechtsklick im Zeitfenster):** Teleportiert 5 zufällige Kreaturen (keine Items) in einem Radius von 30 Blöcken an die Koordinate Y=-67 und tötet sie damit durch die Leere. Danach werden `global:voidrelic` und `global:voidrelicpower` auf 0 zurückgesetzt.
+    - **Fehlschlag:** Wenn die Fähigkeit nicht innerhalb der 4 Sekunden genutzt wird (`global:voidrelicpower` wird automatisch auf 0 zurückgesetzt), erscheint die Nachricht "The Void Tentacels lost trust in you!" und `global:voidrelic` wird nur auf 6000 zurückgesetzt, was die nächste Aufladung verkürzt.
+    - Wenn man rechtsklickt, bevor das Relikt aufgeladen ist, erscheint die Nachricht "Hold on tight und dahinter die anzahl der vaiable global:voidrelic durch 10 geteilt angezeigt".
+
+**Berserk Hand**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 5 Grundschaden, 1.8 Angriffsgeschwindigkeit, 7210 Haltbarkeit.
+- **Funktion "Berserker's Rage":**
+    - Diese Waffe wird stärker, je weniger Leben der Träger hat. Die Verzauberungen "Schärfe" und "Rückstoß" werden bei jedem Tick (also 20-mal pro Sekunde) basierend auf der aktuellen Gesundheit des Spielers angepasst. Die Logik entfernt zuerst die alten Verzauberungen und wendet dann die neuen an. Wenn die alte Verzauberung entfernt wird wird der Sound "tripwirer hook off" gespielt und bei hinzufügen "tripwirer hook on" abgespielt. Zwischen den sounds muss mindetsens 1 sekunde sein!
+    - **Gesundheit > 18 (9 Herzen):** Schärfe I, Rückstoß I (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+    - **Gesundheit > 16 (8 Herzen):** Schärfe II, Rückstoß II (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+    - **Gesundheit > 14 (7 Herzen):** Schärfe III, Rückstoß III (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+    - **Gesundheit > 12 (6 Herzen):** Schärfe IV, Rückstoß IV (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+    - **Gesundheit > 10 (5 Herzen):** Schärfe V, Rückstoß V (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+    - **Gesundheit > 8 (4 Herzen):** Schärfe VI, Rückstoß VI (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+    - **Gesundheit > 6 (3 Herzen):** Schärfe VII, Rückstoß VII (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+    - **Gesundheit > 4 (2 Herzen):** Schärfe VIII, Rückstoß VIII (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+    - **Gesundheit > 2 (1 Herz):** Schärfe IX, Rückstoß IX (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+    - **Gesundheit <= 2 (ein halbes Herz):** Schärfe X, Rückstoß X (Rückstoß stößt Gegner weg und zieht sie nicht an, verwende einfach die vanilla verzauberungen: sharpness und knockback)
+
+**Breacher**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 9 Schaden, 1.5 Angriffsgeschwindigkeit, 1200 Haltbarkeit.
+- **Reparatur:** Kann mit "Heavy Cores" repariert werden.
+- **Funktion "Armor Breach":**
+    - Wenn man die waffe in der Hand hält ignoriert sie 10% der Rüstung wenn man jemanden angreift. Wenn man das schwert in einem amboss mit einem heavy core zusammen fügt ignoriert es 10% mehr (maximal 90%)
+
+**Chorus Slayer**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 9 Schaden, 0.8 Angriffsgeschwindigkeit, 2300 Haltbarkeit.
+- **Reparatur:** Kann mit Chorusblumen repariert werden.
+- **Funktion "Chorus Dash":**
+    - **Variable:** `global:Tp` (Cooldown).
+    - **Rechtsklick:** Prüft, ob `global:Tp` kleiner als 1 ist. Wenn ja, wird die Fähigkeit ausgelöst und `global:Tp` auf 1 gesetzt.
+    - **Aktion:** Stößt (pusht) den Spieler. Die Bewegung wird durch Setzen der Geschwindigkeit des Spielers erreicht.
+        - Die Geschwindigkeit in X- und Z-Richtung wird auf das 20-fache des aktuellen  blickwinkels gesetzt, was zu einem schnellen Dash nach vorne führt.
+        - Die Geschwindigkeit in Y-Richtung (Höhe) wird auf einen festen Wert von 0.2 gesetzt, was einen leichten Auftrieb bewirkt.
+    - **Effekte:** Der Dash wird von 80 End-Rod-Partikeln und dem Chorusfrucht-Teleport-Sound begleitet.
+    - **Cooldown:** Die Fähigkeit hat einen Cooldown von 60 Sekunden (1200 Ticks), nach denen `global:Tp` wieder auf 0 gesetzt wird. Ein detaillierter Countdown wird im Chat angezeigt. Bei dem Versuch, die Fähigkeit während des Cooldowns zu nutzen, erscheint die Nachricht "Ability on Cooldown".
+
+**Dragon Slayer**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 12 Schaden, 1.2 Angriffsgeschwindigkeit, 12500 Haltbarkeit.
+- **Reparatur:** Kann mit Endkristallen repariert werden.
+- **Besonderheiten:** Eine reine Status-Waffe ohne aktive Spezialfähigkeit allerdings ist es mit allen schwert verzauberungen auf Level 10 verzauebrt
+
+**Earth Wave Sword**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 8 Schaden, 1.6 Angriffsgeschwindigkeit, 450 Haltbarkeit.
+- **Funktion "Earth Shatter":**
+    - **Variable:** `global:earthcooldown` (Cooldown).
+    - **Rechtsklick:** Prüft, ob `global:earthcooldown` auf 0 steht. Wenn ja, wird die Fähigkeit ausgelöst und die Variable auf 1 gesetzt.
+    - **Aktion:** Erzeugt sofort eine große Welle aus spitzem Tropfstein (visuell dargestellt durch Block-Displays) in einem größer werdenden radius um den Spieler bis zu maximal 9 blöcke raidus und desto weiter weg der Gegner ist desto höher fliegt er.
+Radius um den Spieler.
+    - Alle Kreaturen (außer der Spieler selbst) in einem 6-Block-Radius werden 10 blöcke bei ganz nah und 25 blöcke bei 9 blöcke weit weg des Spielers.
+
+    - Die Tropfstein-Spitzen verschwinden nach kurzer Zeit wieder.(keine Partikel sondern wirklich blöckdisplays eines dripstones (5 blöcke hoch))
+    - **Cooldown:** 20 Sekunden, nach denen `global:earthcooldown` wieder auf 0 gesetzt wird. Ein Countdown wird im Chat angezeigt.
+
+**Ghost Blade**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 11 Schaden, 1.2 Angriffsgeschwindigkeit, 6150 Haltbarkeit.
+- **Funktion "Ghost Dash":**
+    - **Variable:** `global:ghostbladecooldown` (Cooldown).
+    - **Rechtsklick:** Prüft, ob `global:ghostbladecooldown` auf 0 steht. Wenn ja, wird die Fähigkeit ausgelöst und die Variable auf 1 gesetzt.
+    - **Aktion:** Der Spieler führt einen schnellen "Dash" (kurze Beschleunigung) 2 Blöcke in Blickrichtung aus.
+    - Gleichzeitig wird der Spieler für 3 Sekunden unsichtbar.
+    - Die nächste Kreatur innerhalb von 4 Blöcken erleidet 6 Schaden (Typ: `out_of_world`, ignoriert Rüstung).
+    - **Cooldown:**5Sekunden, nach denen `global:ghostbladecooldown` wieder auf 0 gesetzt wird. Eine Nachricht informiert, wenn die Fähigkeit wieder bereit ist.
+
+**Gods view**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 7 Schaden, 1.3 Angriffsgeschwindigkeit, 290 Haltbarkeit.
+- **Funktion "All-Seeing Eye":**
+    - **Variable:** `global:godviewcooldown` (Cooldown).
+    - **Rechtsklick:** Prüft, ob `global:godviewcooldown` auf 0 steht. Wenn ja, wird die Fähigkeit ausgelöst und die Variable auf 1 gesetzt.
+    - **Aktion:** Verleiht allen Spielern in einem 80-Block-Radius für 5 Sekunden den "Leuchten"-Effekt, wodurch sie durch Wände sichtbar werden.
+    - **Effekte:** Die Aktivierung wird von einem Leuchtfeuer-Sound und einem rein visuellen Blitzeinschlag begleitet.
+    - **Cooldown:** 15 Sekunden, nach denen `global:godviewcooldown` wieder auf 0 gesetzt wird. Ein Countdown wird im Chat angezeigt.
+
+**Life Stealer**
+- **Typ:** Schwert
+- **Werte:** 10 Schaden, 0.8 Angriffsgeschwindigkeit, 9200 Haltbarkeit.
+- **Reparatur:** Kann mit einem Totem der Unsterblichkeit repariert werden.
+- **Funktion "Last Stand":**
+    - wenn der Spieler eine Kreatur besiegt erhält er 10% der maximalen leben des getöteten  Gegners als permanente Zusatz herzen, welche nichrt regeneriert werden können
+    - Man kann maximal 20 extra herzen erhalten.
+
+**Phantom Blade**
+- **Typ:** Schild
+- **Werte:** 4 Schaden, 300 Haltbarkeit.
+- **Funktionen:**
+    - **Variablen:** `global:phantomwings` (Zufallszahl), `global:phantominvisscooldown` (Cooldown).
+    - **Passiv (in der Zweithand):** Wird bei jedem Tick (20-mal pro Sekunde) ausgelöst, wenn das Schild in der Zweihand ist.
+        - Verleiht dem Spieler für solange man das item offhand hatdie Effekte: Geschwindigkeit III (Level 2), Sprungkraft III (Level 2), Schwäche II (Level 1).
+        - **Aktiv (Rechtsklick):**
+        - Prüft, ob `global:phantominvisscooldown` auf 0 steht.
+        - Wenn ja, verleiht es dem Spieler Unsichtbarkeit I für 10 Sekunden (200 Ticks) ohne Partikel und setzt `global:phantominvisscooldown` auf 1.
+        - Nach 15 Sekunden (300 Ticks) wird der Cooldown wieder auf 0 gesetzt.
+    - **Cooldown (Unsichtbarkeit):** 15 Sekunden.
+
+**Thunder Sword**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 14 Schaden, 0.45 Angriffsgeschwindigkeit, 5300 Haltbarkeit.
+- **Reparatur:** Kann mit Kupferbarren repariert werden.
+- **Besonderheiten:** Immun gegen Feuer.
+- **Funktion "Thunder Strike":**
+    - **Variable:** `global:cooldownThunder` (Cooldown).
+    - **Rechtsklick:** Prüft, ob `global:cooldownThunder` auf 0 steht. Wenn ja, wird die Fähigkeit ausgelöst und die Variable auf 1 gesetzt.
+    - **Aktion:** Ruft auf alle Kreaturen in einem Radius von 2 bis 10 Blöcken um den Spieler einen Blitz herab.
+    - Betroffene Kreaturen erhalten für 3 Sekunden die Effekte "Langsamkeit X" und "Blindheit X" und ihre Sprungkraft wird auf 0 gesetzt, was sie bewegungsunfähig macht. Der Spieler selbst ist von den negativen Effekten ausgenommen.
+    - **Cooldown:** 12 Sekunden, nach denen `global:cooldownThunder` wieder auf 0 gesetzt wird. Ein Countdown wird im Chat angezeigt.
+
+**TNT Rod**
+- **Typ:** Angel
+- **Werte:** 4 Schaden, 5000 Haltbarkeit.
+- **Reparatur:** Kann mit TNT-Blöcken repariert werden.
+- **Funktion "TNT Rain":**
+    - Bei normaler Benutzung (Auswerfen des Hakens) wird nach einer Sekunde ein TNT-Block an der Position des Angelhakens beschworen.
+    - Dies wiederholt sich 5-mal im Abstand von jeweils einer halben Sekunde. Pro beschworenem TNT verliert die Angel 100 Haltbarkeit.
+    - **Wichtig:** Funktioniert nur, wenn die Angel in der Haupthand gehalten wird.
+- **Herstellung:** Benötigt 3 "Verstärkte Stöcke", 1 Faden und 1 TNT-Block.
+    - **Anordnung:**
+        - Oben Rechts: Verstärkter Stock
+        - Mitte Rechts: Verstärkter Stock & Faden (exakte Position unklar, da Rezept unlogisch ist, wahrscheinlich ein Fehler in der Mod-Datei)
+        - Unten Links: Verstärkter Stock
+        - Unten Rechts: TNT-Block
+
+**Tnt Sword**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 8 Schaden, 0.85 Angriffsgeschwindigkeit, 2100 Haltbarkeit.
+- **Funktion "Explosive Placement":**
+    - **Variable:** `global:tntcooldown` (Cooldown).
+    - **Rechtsklick auf einen Block:** Prüft, ob `global:tntcooldown` auf 0 steht. Wenn ja, wird die Fähigkeit ausgelöst und die Variable auf 1 gesetzt.
+    - **Aktion:** Beschwört an der angeklickten Stelle eine TNT-Lore (MinecartTNT), die sofort mit einer vertikalen Geschwindigkeit von 1.5 nach oben geschleudert wird und dann explodiert.
+    - **Cooldown:** 16 Sekunden, nach denen `global:tntcooldown` wieder auf 0 gesetzt wird. Ein Countdown wird im Chat angezeigt.
+
+**Warden Blaster**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 9 Schaden, 0.9 Angriffsgeschwindigkeit, 7900 Haltbarkeit.
+- **Funktion "Sonic Boom":**
+    - **Variable:** `global:wardenblastercooldown` (Cooldown).
+    - **Rechtsklick:** Prüft, ob `global:wardenblastercooldown` auf 0 steht. Wenn ja, wird die Fähigkeit ausgelöst und die Variable auf 1 gesetzt.
+    - **Aktion:** Feuert einen Schallstrahl ab, der dem des Wardens nachempfunden ist.
+    - Der Strahl besteht aus einer Kette von unsichtbaren Schadenswolken und Partikeln, die sich 10 Blöcke weit in Blickrichtung erstrecken.
+    - Kreaturen im Strahl erleiden hohen Sofortschaden (Rüstung wird teilweise ignoriert). Der Schaden nimmt mit der Entfernung leicht ab.
+    - Begleitet wird dies von den originalen Warden-Soundeffekten.
+    - **Cooldown:** 30 Sekunden, nach denen `global:wardenblastercooldown` wieder auf 0 gesetzt wird. Ein Countdown wird im Chat angezeigt.
+
+**Wind Blade**
+- **Typ:** Schwert (bedeutet es kann verzauberungen eines schwertes (z.b. schärfe oder fire_aspect) verzaubert haben und baut keine blöcke schneller ab]
+- **Werte:** 0.1 Schaden, 8.0 Angriffsgeschwindigkeit, 895 Haltbarkeit.
+- **Reparatur:** Kann mit "Breeze Rods" repariert werden.
+- **Funktion "Feather Step":**
+    - **Variablen:** `global:WindBladeJumps` (Sprungzähler), `global:WindBladeCd` (Cooldown).
+    - **Rechtsklick in der Luft:** Prüft, ob `global:WindBladeJumps` größer als 0 ist. Wenn ja, wird die Fähigkeit ausgelöst und die Variable um 1 verringert.
+    - **Aktion:** Ermöglicht es dem Spieler, bis zu viermal hintereinander in der Luft zu springen (ähnlich einem "Double Jump"). Jeder Sprung verleiht zudem für 10 Sekunden "Langsamer Fall I".
+    - Ein Zähler im Chat zeigt die verbleibenden Sprünge an.
+    - **Zurücksetzen:** Um die Sprünge wieder aufzuladen, muss der Spieler auf dem Boden stehen und rechtsklicken. Dies prüft, ob `global:WindBladeCd` auf 0 steht, setzt `global:WindBladeJumps` auf 4 und `global:WindBladeCd` auf 1.
+    - **Cooldown:** 5 Sekunden, nach denen `global:WindBladeCd` wieder auf 0 gesetzt wird.
+
+**Levitation Wand**
+- **Typ:** Werkzeug (Item)
+- **Werte:** 1000 Haltbarkeit, nicht stapelbar (Stack Size 1).
+- **Funktion "Mass Levitation":**
+    - **Auslösung:** Rechtsklick in die Luft.
+    - **Logik:** Führt 10-mal hintereinander einen Befehl aus.
+    - **Befehl:** `/execute at @p run tp @e[limit=10,sort=nearest,distance=1..15,type=!block_display,type=!item] ^ ^ ^10`
+        - `at @p`: Führt den Befehl von der Position des Spielers aus.
+        - `tp @e[...]`: Teleportiert eine Kreatur.
+        - `limit=10,sort=nearest`: Wählt die 10 nächstgelegenen Ziele aus.
+        - `distance=1..15`: Das Ziel muss zwischen 1 und 15 Blöcken vom Spieler entfernt sein.
+        - `type=!block_display,type=!item`: Schließt spezielle Block-Anzeigen und fallengelassene Items als Ziele aus.
+        - `^ ^ ^10`: Teleportiert das Ziel 10 Blöcke nach vorne, relativ zur Blickrichtung des Spielers.
+    - **Effekt:** Bei jedem Klick werden die 10 nächstgelegenen Kreaturen im Umkreis von 15 Blöcken erfasst und 10 Blöcke in die Blickrichtung des Spielers teleportiert. Da der Befehl 10-mal wiederholt wird, kann dies zu sehr schnellen, wiederholten Teleportationen derselben Kreaturen führen, wenn keine neuen Ziele in Reichweite kommen.
+    - **Haltbarkeit:** Für jede der 10 Befehlsausführungen (also 10-mal pro Rechtsklick) verliert der Stab 1 Haltbarkeitspunkt. Ein Klick kostet also insgesamt 10 Haltbarkeit.
+- **Herstellung:** Benötigt 2 "Verstärkte Stöcke", 2 Federn und 1 beschreibbares Buch.
+    - **Anordnung:**
+        - Oben Mitte: Feder
+        - Oben Rechts: Beschreibbares Buch
+        - Mitte: Verstärkter Stock
+        - Mitte Rechts: Feder
+        - Unten Links: Verstärkter Stock
+
+---
+
+### Tränke & Materialien
+
+**Chaos Crystal**
+- **Typ:** Gegenstand
+- **Funktion "Cooldown Reset":**
+    - **Betroffene Variablen:** `global:Tp`, `global:WindBladeCd`, `global:WindBladeJumps`, `global:phantominvisscooldown`, `global:wardenblastercooldown`, `global:tntswordcooldown`, `global:thunderswordcooldown`, `global:godviewcooldown`, `global:ghostbladecooldown`, `global:earthcooldown`, `global:voidrelic`, `global:voidrelicpower`.
+    - **Logik:** Solange sich dieser Kristall im Inventar des Spielers befindet, werden bei jedem Tick alle oben genannten Cooldown- und Timer-Variablen permanent auf 0 (oder ihren "Bereit"-Zustand) gesetzt.
+    - Dies ermöglicht die unbegrenzte, sofortige Nutzung aller Fähigkeiten anderer Spezialwaffen. Ideal für Tests oder den Kreativmodus.
+
+**Corrosive Dust / Potion of Corrosive Fire**
+- **Typ:** Material / Trank
+- **Funktion "Armor Corrosion":**
+    - Wenn eine Kreatur oder ein Spieler vom Effekt "Corrosive Fire" betroffen ist, erleiden sofort alle 4 Rüstungsteile sowie die Gegenstände in Haupt- und Nebenhand 50 Punkte Haltbarkeitsschaden.
+    - Dieser Schaden wiederholt sich nach 10 Sekunden (200 Ticks) ein weiteres Mal. Insgesamt also 100 Haltbarkeitsschaden pro Item-Slot.
+- **Herstellung (Staub):** Komplexe Kombination aus Redstone, Slimeball, Zucker, Lavaeimer, Leuchtstaub und Schießpulver.
+    - **Anordnung (Staub):**
+        - Obere Reihe: Redstone, Slimeball, Zucker
+        - Mittlere Reihe: Slimeball, Lavaeimer, Leuchtstaub
+        - Untere Reihe: Zucker, Schießpulver, Redstone
+- **Herstellung (Trank):** Wird gebraut aus einem "Wasser Flasche" und "Corrosive Dust".
+
+**Gray Apple**
+- **Typ:** Essen
+- **Effekte beim Verzehr:**
+    - Absorption X (20 zusätzliche Herzen) für 10 Sekunden.
+    - Regeneration I für 3 Sekunden.
+    - Schwäche V für 15 Sekunden.
+    - Resistenz II für 5 Sekunden.
+- **Herstellung:** Benötigt 1 Goldenen Apfel, 1 Totem der Unsterblichkeit, 4 Netherite-Barren und 3 Eisenbarren.
+    - **Anordnung:**
+        - Obere Reihe: Netherite-Barren, Eisenbarren, Netherite-Barren
+        - Mittlere Reihe: Eisenbarren, Goldener Apfel, Eisenbarren
+        - Untere Reihe: Netherite-Barren, Totem der Unsterblichkeit, Netherite-Barren
+
+**Potion of Instant XP**
+- **Typ:** Trank
+- **Funktion "Experience Boost":**
+    - Wenn der Trank getrunken wird (oder man vom Wurftrank getroffen wird), erhält der Spieler sofort 500 Erfahrungspunkte.
+- **Herstellung:** Wird gebraut aus einem "Wasser Flasche" und einem "XP Orb".
+
+**PVP Potion**
+- **Typ:** Trank
+- **Effekte:** Verleiht dem Spieler für 5 Minuten die Effekte Geschwindigkeit II, Stärke II und Feuerresistenz I.
+- **Herstellung:** Wird gebraut aus einem "Wasser Flasche" und einem Netherstern.
+
+**Reinforced Stick**
+- **Typ:** Material
+- **Besonderheiten:** Ein grundlegendes Handwerksmaterial, das für die meisten der mächtigen Waffen in diesem Mod benötigt wird.
+- **Herstellung:** Benötigt 1 Stock, 1 Netherite-Barren, 2 Eisenbarren und 1 Eisengitter.
+    - **Anordnung:**
+        - Oben Mitte: Netherite-Barren
+        - Mitte Links: Eisenbarren
+        - Mitte: Stock
+        - Mitte Rechts: Eisenbarren
+        - Unten Mitte: Eisengitter
+
+**Sharpened Amethyst Shard**
+- **Typ:** Material
+- **Besonderheiten:** Ein Handwerksmaterial, das speziell für das "Amethyst Sword" benötigt wird.
+- **Herstellung:** Benötigt 1 Amethyst-Scherbe und 4 Diamanten.
+    - **Anordnung:**
+        - Oben Mitte: Diamant
+        - Mitte Links: Diamant
+        - Mitte: Amethyst-Scherbe
+        - Mitte Rechts: Diamant
+        - Unten Mitte: Diamant
+
+---
+
+### Verwendete Variablen (Alle spielerbezogen)
+
+*   **global:Tp** (Zahl): Dient als Cooldown-Timer für die "Chorus Dash"-Fähigkeit des **Chorus Slayer**. Wird auf 1 gesetzt, wenn die Fähigkeit genutzt wird, und nach 60 Sekunden wieder auf 0.
+*   **global:WindBladeCd** (Zahl): Dient als Cooldown-Timer für das Zurücksetzen der Sprünge des **Wind Blade**. Wird auf 1 gesetzt, wenn die Sprünge am Boden zurückgesetzt werden, und nach 5 Sekunden wieder auf 0.
+*   **global:WindBladeJumps** (Zahl): Zählt die verbleibenden Luftsprünge für das **Wind Blade**. Startet bei 4 und wird bei jedem Sprung um 1 verringert.
+*   **global:phantomwings** (Zahl): Wird für die passive Fähigkeit des **Phantom Blade** genutzt. Jede Sekunde wird eine Zufallszahl zwischen 1 und 10 generiert. Ist die Zahl 2, wird ein visueller Blitz erzeugt.
+*   **global:phantominvisscooldown** (Zahl): Dient als Cooldown-Timer für die Unsichtbarkeits-Fähigkeit des **Phantom Blade**. Wird auf 1 gesetzt, wenn die Fähigkeit genutzt wird, und nach 15 Sekunden wieder auf 0.
+*   **global:wardenblastercooldown** (Zahl): Dient als Cooldown-Timer für den "Sonic Boom" des **Warden Blaster**. Wird auf 1 gesetzt, wenn die Fähigkeit genutzt wird, und nach 30 Sekunden wieder auf 0.
+*   **global:tntcooldown** (Zahl): Dient als Cooldown-Timer für die "Explosive Placement"-Fähigkeit des **Tnt Sword**. Wird auf 1 gesetzt, wenn die Fähigkeit genutzt wird, und nach 16 Sekunden wieder auf 0.
+*   **global:cooldownThunder** (Zahl): Dient als Cooldown-Timer für den "Thunder Strike" des **Thunder Sword**. Wird auf 1 gesetzt, wenn die Fähigkeit genutzt wird, und nach 12 Sekunden wieder auf 0.
+*   **global:godviewcooldown** (Zahl): Dient als Cooldown-Timer für die "All-Seeing Eye"-Fähigkeit von **Gods view**. Wird auf 1 gesetzt, wenn die Fähigkeit genutzt wird, und nach 15 Sekunden wieder auf 0.
+*   **global:ghostbladecooldown** (Zahl): Dient als Cooldown-Timer für die "Ghost Dash"-Fähigkeit des **Ghost Blade**. Wird auf 1 gesetzt, wenn die Fähigkeit genutzt wird, und nach 10 Sekunden wieder auf 0.
+*   **global:earthcooldown** (Zahl): Dient als Cooldown-Timer für die "Earth Shatter"-Fähigkeit des **Earth Wave Sword**. Wird auf 1 gesetzt, wenn die Fähigkeit genutzt wird, und nach 20 Sekunden wieder auf 0.
+*   **global:voidrelic** (Zahl): Dient als Auflade-Timer für das **Ancient Void Relic**. Zählt hoch, solange das Item in der Hand gehalten wird.
+*   **global:voidrelicpower** (Zahl): Dient als kurzes Zeitfenster für die Aktivierung der Fähigkeit des **Ancient Void Relic**. Wird auf 1 gesetzt, wenn `voidrelic` 12000 erreicht, und nach 4 Sekunden wieder auf 0.
+

@@ -1,0 +1,56 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:ReinforcedStick"
+      },
+      {
+        "value": "Items.FEATHER"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.FEATHER"
+      },
+      {
+        "value": "Items.WRITABLE_BOOK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ReinforcedStick"
+      },
+      {
+        "value": "Items.FEATHER"
+      },
+      {
+        "value": "CUSTOM:ReinforcedStick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LevitationWand"
+    },
+    "name": "levitation_wand_crafting",
+    "namespace": "mod"
+  }
+}

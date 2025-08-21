@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "combat-smp-swords-arg",
+	"version": "${version}",
+	"name": "Combat Smp swords arg",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/combat-smp-swords-arg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"combat.smp.swords.argmodid.CombatSmpSwordsArg"
+		],
+		"client": [
+			"combat.smp.swords.argmodid.CombatSmpSwordsArgClient"
+		]
+	},
+	"mixins": [
+		"combat-smp-swords-arg.mixins.json",
+		{
+			"config": "combat-smp-swords-arg.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.7",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

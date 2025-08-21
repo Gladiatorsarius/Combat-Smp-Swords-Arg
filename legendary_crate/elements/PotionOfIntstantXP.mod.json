@@ -1,0 +1,24 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Intstant XP",
+    "icon": "intsantxppotionicon",
+    "color": {
+      "value": -16716033,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": "entity.experience_orb.pickup"
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "PotionOfIntstantXPEffectStartedapplied"
+    }
+  }
+}

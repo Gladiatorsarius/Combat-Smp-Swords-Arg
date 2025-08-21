@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "legendary_crate:sharpened_amethyst_shard",
+    "b": "legendary_crate:reinforced_stick"
+  },
+  "result": {
+    "id": "legendary_crate:amethyst_sword",
+    "count": 1
+  }
+}

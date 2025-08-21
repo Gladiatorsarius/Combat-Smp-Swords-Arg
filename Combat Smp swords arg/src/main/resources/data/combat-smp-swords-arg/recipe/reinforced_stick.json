@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " N ",
+    "ISI",
+    " G "
+  ],
+  "key": {
+    "N": {
+      "id": "minecraft:netherite_ingot"
+    },
+    "I": {
+      "id": "minecraft:iron_ingot"
+    },
+    "S": {
+      "id": "minecraft:stick"
+    },
+    "G": {
+      "id": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "id": "combat-smp-swords-arg:reinforced_stick",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NIN",
+    "IGA",
+    "NTN"
+  ],
+  "key": {
+    "N": {
+      "id": "minecraft:netherite_ingot"
+    },
+    "I": {
+      "id": "minecraft:iron_ingot"
+    },
+    "G": {
+      "id": "minecraft:golden_apple"
+    },
+    "A": {
+      "id": "minecraft:totem_of_undying"
+    },
+    "T": {
+      "id": "minecraft:totem_of_undying"
+    }
+  },
+  "result": {
+    "id": "combat-smp-swords-arg:gray_apple",
+    "count": 1
+  }
+}

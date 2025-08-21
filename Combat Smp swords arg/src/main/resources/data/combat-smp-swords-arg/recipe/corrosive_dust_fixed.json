@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RSZ",
+    "SLG",
+    "ZPR"
+  ],
+  "key": {
+    "R": {
+      "id": "minecraft:redstone"
+    },
+    "S": {
+      "id": "minecraft:slime_ball"
+    },
+    "Z": {
+      "id": "minecraft:sugar"
+    },
+    "L": {
+      "id": "minecraft:lava_bucket"
+    },
+    "G": {
+      "id": "minecraft:glowstone_dust"
+    },
+    "P": {
+      "id": "minecraft:gunpowder"
+    }
+  },
+  "result": {
+    "id": "combat-smp-swords-arg:corrosive_dust",
+    "count": 1
+  }
+}

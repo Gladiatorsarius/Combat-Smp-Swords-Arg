@@ -1,0 +1,56 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "CUSTOM:ReinforcedStick"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ReinforcedStick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ReinforcedStick"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "CUSTOM:ReinforcedStick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.TNT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TNTRod"
+    },
+    "name": "tnt_rod_c_rafting",
+    "namespace": "mod"
+  }
+}

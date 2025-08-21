@@ -1,0 +1,26 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:AWKWARD"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:CorrosiveDust"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:CorrosiveFirePotion"
+    },
+    "name": "corrosive_fire_brewing",
+    "namespace": "mod"
+  }
+}

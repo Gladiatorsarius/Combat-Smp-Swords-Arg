@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "legendary_crate:item/chatgpt_image_11._aug._2025_20_15_12"
+  }
+}

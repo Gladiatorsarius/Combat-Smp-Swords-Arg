@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  R",
+    " RS",
+    "R T"
+  ],
+  "key": {
+    "R": {
+      "id": "combat-smp-swords-arg:reinforced_stick"
+    },
+    "S": {
+      "id": "minecraft:string"
+    },
+    "T": {
+      "id": "minecraft:tnt"
+    }
+  },
+  "result": {
+    "id": "combat-smp-swords-arg:tnt_rod",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " FB",
+    " RS"
+  ],
+  "key": {
+    "F": {
+      "id": "minecraft:feather"
+    },
+    "B": {
+      "id": "minecraft:writable_book"
+    },
+    "R": {
+      "id": "combat-smp-swords-arg:reinforced_stick"
+    },
+    "S": {
+      "id": "combat-smp-swords-arg:reinforced_stick"
+    }
+  },
+  "result": {
+    "id": "combat-smp-swords-arg:levitation_wand",
+    "count": 1
+  }
+}
